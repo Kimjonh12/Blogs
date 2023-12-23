@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+        border-radius: 100px;
+        padding: 15px 0;
+        display: block;        
+ }
+
+.Thuman{
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.Tthuman{
+    padding-left: 80px;
+    font-size: 10px;
+    padding-right: 40px;
+}
+.nav{
+    color: #eaeaff;
+}
+.hand{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Topic{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  
+}
+.body{
+    background-color: #1538ff;
+    background-color: black;
+}
+
+///////////////
+
+
+

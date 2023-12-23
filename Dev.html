@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+ <style>
+     .comet {            
+            width: 350px;
+            height: auto;
+            border: 1px solid black;
+            padding: 5px;
+            }
+     .fotext{
+         color:#dfd5ff;
+         text-align:center;
+     }       
+    
+ </style>
+<scipt href="Dev.js"></scipt>
+<link rel="stylesheet" href="Dev.Css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>    
+    <nav class=" row bg-dark">
+        <div class="col-sm-2">
+            <img src="logo.jpg" alt="logo" width="70px" height="80px" class="logo mx-auto d-block">            
+        </div>
+        <div class="col-sm-4">
+            <p class="h5 text-center mt-4 text-light"><span class="text-danger">BLOG</span> Kim Estrera</p>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col">
+         <p class="text-light text-center mt-4"><a class="h6" href="#">Home</a></p>
+        </div>
+        <div class="col">
+          <p class="text-light text-center mt-4"><a class="h6" href="#">Blogs</a></p>
+        </div>
+        <div class="col">
+         <p class="text-light text-center mt-4"><a class="h6" href="#">About</a></p>
+        </div>                        
+    </nav>
+    
+    <div style="background-image: url('body.jpeg'); height:500px; background-repeat: no-repeat; background-size: cover; width: 100%">
+       
+           
+           
+           
+        <p class="Thuman h1">HUMANITY</p>
+        <p class="Tthuman">
+           Humanity is crucial as it embodies shared experiences, empathy, and collective potential. It fosters compassion, drives innovation, and underscores our responsibility to care for each other and the planet.
+      </p>
+      <p style="padding-left: 85px;">Everyone has Human rights!</p> 
+    </div>
+    
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="h5 text-light text-center mt-4"><span class="h3 text-danger">Subscribe</span> to us!</p>
+            </div>
+            <div class="col-sm-2">
+                <p class="h5 text-light text-center mt-4"><span class="h3 text-danger">Now!!</span> </p>
+            </div>
+            <div class="col">                
+                <input type="email" id="Email" placeholder="Enter email..."   class="mt-4 my-4 mx-1">               
+            </div>
+            <div class="col">
+                <button onclick="Subscribe()" class="mt-4 mx-1 my-4">Enter</button>
+            </div>
+        </div>
+    </div>
+   
+   
+   
+   <div class="container-fluid">
+       <div class="container">
+       <div class="row">
+           <div class="col mt-5">
+               <div class="card" style="width: 18rem;"> <img src="educ.jpeg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Education</h5> <p class="card-text">Right's in Education. </p> <a href="#" class="btn btn-primary">Go somewhere</a> </div> </div>
+           </div>
+           <div class="col mt-5 "  >
+               <div class="row">
+                   <div class="col" style="border:solid black; border-radius:10%;">
+                       <p class="h1 text-dark text-center">Comment</p>
+                       <div class="comet my-5" style="border:solid black;">
+                         <p class="my-2 mx-2">User:<a id="down"></a></p>
+                       </div>
+                       <input id="comment" style="border:solid black;" class="my-3"  type="text" placeholder="comment here! ">
+                       <button class="my-3" onclick="Comment()">Submit</button>
+                   </div>
+               </div>
+               </div>
+               <div class="row"></div>
+           </div>
+           
+       </div>
+   </div>
+   
+   <footer class="bg-dark mt-3">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-2">
+                   <p class="text-danger text-center mt-5">CPC Student</p>
+                   <p class="fotext">Kim john Estrera</p>
+                   <p class="fotext">Bsit</p>
+                   <p class="fotext">2A</p>
+                   
+               </div>
+               <div class="col-sm-5">
+                   <p class="text-danger text-center mt-5">Project</p>
+                   <p class="fotext">Successfully completed Platech project with dedication, achieving goals collaboratively. Grateful for the opportunity and excited for future contributions.</p>
+               </div>
+               <div class="col-sm-5">
+                   <p class="text-danger text-center mt-5">DONE</p>
+                   <p class="fotext">I take pride in successfully completing the task, demonstrating dedication and achieving the objective. Grateful for the opportunity and experience gained.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+   
+   
+<script>
+    function Subscribe(){
+        let Email = document.getElementById("Email").value;
+        if(Email === null || Email === ""){
+            alert("Need Email to Subscribe!")
+        }else{
+          alert("Thank You for Subcribing!")  
+        }
+        document.getElementById("Email").value="";
+    }
+    
+    
+    
+    
+    
+    function Comment(){
+        
+  let comment = document.getElementById("comment").value;
+    let down = document.getElementById("down").innerHTML;
+
+    if (down === null || down === "") {
+        document.getElementById("down").innerHTML = comment;
+    } else {
+        document.getElementById("down").innerHTML = down + "<br>" + "User:" + comment;
+    }
+
+    document.getElementById("comment").value = "";
+}
+
+
+            
+</script>
+      
+   
+   
+    
+</body>
+</html>
